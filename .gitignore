@@ -2,3 +2,4 @@ node_modules
 .tmp
 server/.env
 clipper-trace.db
+uploads/*
