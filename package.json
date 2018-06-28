@@ -4,6 +4,7 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node server",
+    "watch": "nodemon server",
     "test": "lab -a code -L",
     "lint": "eslint ."
   },
