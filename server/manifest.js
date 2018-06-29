@@ -27,6 +27,10 @@ module.exports = new Confidence.Store({
                 options: {}
             },
             {
+                plugin: 'blipp',
+                options: {}
+            },            
+            {
                 plugin: {
                     $filter: 'NODE_ENV',
                     $default: 'hpal-debug',

@@ -9,11 +9,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "blipp": "^3.0.0",
     "boom": "7.x.x",
     "haute-couture": "3.x.x",
     "joi": "13.x.x",
     "knex": "^0.14.6",
     "objection": "^1.1.10",
+    "potrace": "^2.1.1",
     "schwifty": "^4.0.0",
     "sqlite3": "^4.0.1"
   },
