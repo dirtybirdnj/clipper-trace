@@ -27,12 +27,39 @@ module.exports = new Confidence.Store({
                 options: {}
             },
             {
+                plugin: 'blipp',
+                options: {}
+            },            
+            {
                 plugin: {
                     $filter: 'NODE_ENV',
                     $default: 'hpal-debug',
                     production: Toys.noop
                 }
-            }
+            },
+            {
+                plugin: 'schwifty',
+                options: {
+                    $filter: 'NODE_ENV',
+                    $default: {},
+                    $base: {
+                        migrateOnStart: true,
+                        knex: {
+                            client: 'sqlite3',
+                            useNullAsDefault: true,         // Suggested for sqlite3
+                            pool: {
+                                idleTimeoutMillis: Infinity // Handles knex v0.12/0.13 misconfiguration when using sqlite3 (tgriesser/knex#1701)
+                            },
+                            connection: {
+                                filename: 'clipper-trace.db'
+                            }
+                        }
+                    },
+                    production: {
+                        migrateOnStart: false
+                    }
+                }
+            }            
         ]
     }
 });
