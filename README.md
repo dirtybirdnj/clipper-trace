@@ -10,11 +10,22 @@ Event hasMany Image hasMany Trace
 
 **MVP API Endpoints:**
 
-1. Create Event POST @ /events
-1. Upload Image POST @ /events/id/image
-1. Get Trace POST @ /images/id/trace
-1. Save Trace POST @ /images/id/trace - also includes save flag
-1. Retrieve Image Traces GET @ /images/id/traces
-1. Finalize Image POST @ /images/id/finalize
-1. List events GET /events
-1. List event images GET @ /events/id/images
+*Working*
+
+- [x] Create Event POST @ /events
+- [x] List Events GET @ /events
+- [x] Upload Image POST @ /images - pass event ID
+- [x] List Images GET @ /events
+- [x] Create Trace POST @ /traces - pass image ID
+
+*In Progress*
+
+Need to figure out the workflow of creating traces. Should the SVG data be stored or should the client manage that? 
+- [ ] Save Trace POST @ /images/id/trace 
+
+*To Do*
+
+- [ ] Retrieve Image Traces GET @ /images/id/traces
+- [ ] Finalize Image POST @ /images/id/finalize
+- [ ] List events GET /events
+- [ ] List event images GET @ /events/id/images
