@@ -1,5 +1,23 @@
 
 body {
     color: white;
-    background-color: black;
+    background-color: #333333;
+}
+
+#traceOptions {
+
+    background: #ACADAD;
+    padding: 10px 28px;
+    border-radius: 5px;
+
+}
+
+#traceOptions .controlElement {
+
+    padding: 15px 0px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    margin-right: 10px;
+
 }
