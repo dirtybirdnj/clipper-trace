@@ -1,0 +1,67 @@
+<div class="row">
+
+        <div id="traceControls" class="col-2">
+            
+            
+            <p>Image Manipulations</p>
+            <div class="controlContainer">
+
+                <div class="controlElement">
+                    <label for="brightness">Brightness : 25 </label>
+                    <input type="range" id="brightness" name="brightness" min="-50" max="100" step="1"/>
+                </div>
+                <hr/>
+                <div class="controlElement">
+                    <label for="contrast">Contrast : 0 </label>
+                    <input type="range" id="brightness" name="brightness" min="-50" max="100" step="5"/>
+                </div>                
+
+            </div>
+
+            <p>Potrace</p>
+            <div class="controlContainer">
+
+                <div class="controlElement">
+                    <label for="turdsize">turdsize : 25 </label>
+                    <input type="range" id="turdsize" name="turdsize" min="-50" max="100" step="1"/>
+                </div>
+                <hr/>
+                <div class="controlElement">
+                    <label for="alphamax">alphamax : 0 </label>
+                    <input type="range" id="alphamax" name="alphamax" min="-50" max="100" step="5"/>
+                </div>                
+
+            </div>
+
+            <button id="newTrace" class="btn btn-primary">Create Trace</button>                             
+            
+            
+        </div>
+
+        <div id="imageViewOverlay" class="col-8">image / traces / overlay controls</div>
+        
+        <div id="layerControls" class="col-2">
+
+            <ul id="layerList" class="list-group">
+                <li class="list-group-item layerElement">
+                    <p>Layer 15</p>
+                    <i class="fas fa-trash-alt"></i>
+                    <i class="far fa-eye-slash"></i>
+                </li>
+
+                <li class="list-group-item layerElement">
+                    <p>Layer 16</p>
+                    <i class="fas fa-trash-alt"></i>
+                    <i class="far fa-eye-slash"></i>
+                </li>
+
+                <li class="list-group-item layerElement">
+                    <p>Layer 17</p>
+                    <i class="fas fa-trash-alt"></i>
+                    <i class="far fa-eye-slash"></i>
+                </li>    
+
+            </ul>
+
+        </div>
+</div>
