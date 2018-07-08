@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="public/css/cover.css" rel="stylesheet">
-    <link href="public/css/main.css" rel="stylesheet">
+    <link href="{{baseURI}}/public/css/cover.css" rel="stylesheet">
+    <link href="{{baseURI}}/public/css/main.css" rel="stylesheet">
+
+    <base href="{{baseURI}}">
 
   </head>
 
@@ -29,25 +31,20 @@
       
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">clipper-trace</h3>
+          <h3 class="masthead-brand"><a href="/">clipper-trace</a></h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Trace</a>
-            <a class="nav-link" href="#">Events</a>
-            <a class="nav-link" href="#">Images</a>
+            <a class="nav-link active" href="/images/create">Trace</a>
+            <a class="nav-link" href="/events">Events</a>
+            <a class="nav-link" href="/images">Images</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
 
-        {{#> content}}
-            {{!-- Content goes here. --}}
-        {{/content}}
+        {{./baseURL}}
 
-        {{#> workspace}}
-            {{!-- Content goes here. --}}
-        {{/workspace}}     
-   
+        {{{content}}}
 
         {{#if options.developmentMode}}
             <script src="{{baseURI}}/public/js/main.js"></script>

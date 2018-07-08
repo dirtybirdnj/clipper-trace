@@ -38,10 +38,30 @@
             
         </div>
 
-        <div id="imageViewOverlay" class="col-8">image / traces / overlay controls</div>
-        
-        <div id="layerControls" class="col-2">
+        <div id="imageViewOverlay" class="col-8">
 
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Composite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trace Only</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Image Only</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Original Image</a>
+                </li>
+            </ul>
+
+            <div id="displayWorkspace">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Ghostscript_Tiger.svg/512px-Ghostscript_Tiger.svg.png"/>
+            </div>
+        </div>
+
+        <div id="layerControls" class="col-2">
+            <p>Layers</p>
             <ul id="layerList" class="list-group">
                 <li class="list-group-item layerElement">
                     <p>Layer 15</p>
