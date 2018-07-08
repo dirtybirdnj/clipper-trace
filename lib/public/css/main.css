@@ -1,0 +1,82 @@
+
+body {
+    color: white;
+    background-color: #333333;
+}
+
+#traceOptions {
+
+    background: #ACADAD;
+    padding: 10px 28px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+#traceOptions .controlElement {
+
+    padding: 15px 0px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+.controlContainer {
+
+    background: #ACADAD;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*  Old above, new below  */
+
+#traceControls .controlElement {
+    font-size: .7em;
+    text-align: left;
+}
+
+#traceControls p {
+    font-size: .7em;
+    margin-bottom: .5em;
+    text-align: left;
+}
+
+#layerList {
+    
+    border-radius: 5px;
+    background: #ACADAD;
+    padding: 10px;
+    min-width: 150px;
+    color: black;
+}
+
+.layerElement {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.layerElement p {
+    font-size: .7em;
+    float: left;
+}
+
+.layerElement i {
+    float: right;
+    margin-left: 20px;
+}
+
+.layerElement hr {
+    margin: 10px 10px 0px 0px;
+}
+
+#newTrace {
+
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
