@@ -1,0 +1,40 @@
+{{!< layouts/main }}
+<div class="row">
+
+    <div class="col-4">
+        <h1>View Event</h1>
+        <p>{{event.title}}</p>
+        <p><small>{{event.subtitle}}</small></p>
+        <p><small>start_at: {{event.start_at}}</small></p>
+        <p><small>startAt: {{event.startAt}}</small></p>
+
+    </div>
+
+    <div class="col-4">
+        <h2>Event Uploads</h2>
+
+        <hr/>
+        {{>fileUpload}}
+        <hr/>
+
+        {{#each uploads}}
+        <p>{{id}} - <img src="{{path}}" width="200"/></p>
+        {{else}}
+        <p>No uploads yet for this event</p>
+        {{/each}}
+
+    </div>
+
+    <div class="col-4">
+
+        <h2>Event Images</h2>
+        {{#each images}}
+        <p>{{id}} - <img src="{{path}}" width="200"/></p>
+        {{else}}
+        <p>No images yet for this event</p>        
+        {{/each}}
+
+
+    </div>
+
+</div>

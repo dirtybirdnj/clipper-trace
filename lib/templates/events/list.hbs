@@ -1,10 +1,16 @@
 {{!< layouts/main }}
 
+<div class="row">
 
-<h1>Event List</h1>
+    <div class="col-12">
 
-<ul>
-    <li>Wedding</li>
-    <li>Party</li>
-    <li>Funeral / Mud Wrestling</li>
-</ul>
+        <h1>Event List</h1>
+
+        {{#each events}}
+        <a href="/events/{{id}}"><p>{{title}} - {{startTime}}</p></a>
+        {{/each}}
+
+    </div>
+
+
+</div>

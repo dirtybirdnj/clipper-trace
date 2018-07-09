@@ -1,0 +1,19 @@
+
+<h3>Select Image for Upload</h3>
+<small>Requirements: Image must be bitmap (bmp, jpg, png) in fomrat!</small>
+
+<form action="/uploads" method="POST" enctype="multipart/form-data">
+<div class="input-group">
+    <span class="input-group-btn">
+        <span class="btn btn-primary btn-file">
+            Browse&hellip; <input type="file" name="image" single>
+        </span>
+    </span>
+    <input type="text" class="form-control" readonly>
+    <br/>
+    
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+<input type="hidden" name="event_id" value="{{event.id}}"/>
+</form>
