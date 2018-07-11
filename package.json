@@ -20,6 +20,7 @@
     "calipers-jpeg": "^2.0.0",
     "calipers-png": "^2.0.0",
     "calipers-svg": "^2.0.0",
+    "fildes": "^2.1.0",
     "hapi-s3": "^0.3.1",
     "haute-couture": "3.x.x",
     "inert": "^5.1.0",
