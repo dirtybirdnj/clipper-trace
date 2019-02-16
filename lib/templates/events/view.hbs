@@ -1,0 +1,51 @@
+{{!< layouts/main }}
+<div class="row">
+
+    <div class="col-4">
+        <h1>View Event</h1>
+        <p>{{event.title}}</p>
+        <p><small>{{event.subtitle}}</small></p>
+        <p><small>start_at: {{event.start_at}}</small></p>
+        <p><small>startAt: {{event.startAt}}</small></p>
+
+    </div>
+
+    <div class="col-4">
+        <h2>Event Uploads</h2>
+
+        <hr color="#FFFFFF"/>
+        {{>fileUpload}}
+        <hr color="#FFFFFF"/>
+
+        {{#each uploads}}
+        <form action="/images" method="post">
+            <p>{{this}} - <img src="/uploads/{{this}}/src" width="200"/>     
+                <button class="btn btn-default pull-right" type="submit">New Image</button>
+                    
+            </p>
+            <input type="hidden" name="width" value="5"/>
+            <input type="hidden" name="height" value="5"/>
+            <input type="hidden" name="upload_id" value="{{this}}"/>
+            <input type="hidden" name="event_id" value="{{../event.id}}"/>
+        </form>
+
+        {{else}}
+        <p>No uploads yet for this event</p>
+        {{/each}}
+
+    </div>
+
+    <div class="col-4">
+
+        <h2>Event Images</h2>
+        {{#each images}}
+        <p>{{id}} - <a class="btn btn-info" href="/images/{{id}}">View Image {{id}}</a></p>
+        <p>TODO: Image img tag / preview</p>
+        {{else}}
+        <p>No images yet for this event</p>        
+        {{/each}}
+
+
+    </div>
+
+</div>

@@ -40,6 +40,14 @@ module.exports = new Confidence.Store({
                 }
             },
             {
+                plugin  : 'hapi-s3',
+                options : {
+                    publicKey : process.env.AWS_ACCESS_KEY_ID,
+                    secretKey : process.env.AWS_SECRET_ACCESS_KEY,
+                    bucket: process.env.AWS_BUCKET
+                }
+            },            
+            {
                 plugin: 'schwifty',
                 options: {
                     $filter: 'NODE_ENV',

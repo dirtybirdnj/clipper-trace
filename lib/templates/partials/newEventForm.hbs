@@ -1,0 +1,21 @@
+<form action="/events" method="POST">
+  <div class="form-group">
+    <label for="eventTitle">Title</label>
+    <input type="text" class="form-control" name="title" id="eventTitle" placeholder="The main title of the event">
+  </div>
+  <div class="form-group">
+    <label for="subtitle">Subtitle</label>
+    <input type="text" class="form-control" name="subtitle" id="eventSubtitle" placeholder="Any other helpful extra information">
+  </div>
+  <div class="form-check">
+    <!-- TODO: When do I want to add public/private event logic? -->
+    <!-- this input doesn't do anything yet -->
+    <input type="checkbox" class="form-check-input" id="isPublic">
+    <label class="form-check-label" for="isPublic">Public Event?</label>
+  </div>
+  <br/>
+  <button type="submit" class="btn btn-primary">Create New Event</button>
+  
+  <!-- added forward to event view page, when called without this should just return JSON -->
+  <input type="hidden" name="forward" value="true"/>
+</form>

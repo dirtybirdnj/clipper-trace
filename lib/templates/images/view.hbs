@@ -1,0 +1,26 @@
+{{!< layout/main }}
+
+<h2>View an image!</h2>
+<br/>
+<div class="row">
+<div class="col-6">
+<p><small>Original Image Dimensions: {{upload.width}} x {{upload.height}}</small> </p>
+
+<br/>
+
+<img src="/uploads/{{upload.id}}/src" width="100%" />
+<img src="/images/{{image.id}}/svg" width="100%" />
+</div>
+<div class="col-6">
+    <h3>Image Layers:</h3>
+    {{#each layers}}
+        <p>Layer!</p>
+    {{else}}
+    <p>No layers yet.</p>
+    {{/each}}
+
+
+    {{> newTraceForm}}
+
+</div>
+</div>

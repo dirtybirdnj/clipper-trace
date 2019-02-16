@@ -1,0 +1,12 @@
+<form action="/traces" method="POST">
+<strong>Create a new Trace and Paths!</strong>
+
+<p>Contrast: (-1 to 1)<input type="text" name="image.contrast" value="0" /></p>
+<p>Brightness: (-1 to 1)<input type="text" name="image.brightness" value="0" /></p>
+
+
+<input type="hidden" name="image_id" value="{{image.id}}"/>
+
+<button class="btn btn-primary" type="submit">Submit</button>
+
+</form>
