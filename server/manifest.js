@@ -69,6 +69,16 @@ module.exports = new Confidence.Store({
                         migrateOnStart: false
                     }
                 }
+            },
+            {
+                plugin: 'node-hapi-airbrake',
+                options: {
+                  key: AIRBRAKE_API_KEY,
+                  env: 'development',
+                  appId: AIRBRAKE_PROJECT_ID, 
+                  host: 'clipper-trace.herokuapp.com',
+                  notify: 'notify'
+                }
             }            
         ]
     }
