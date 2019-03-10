@@ -43,11 +43,12 @@
     "vision": "^5.3.3",
     "glue": "5.x.x",
     "dotenv": "5.x.x",
-    "hapi": "17.x.x"    
+    "hapi": "17.x.x",
+    "confidence": "3.x.x"        
   },
   "devDependencies": {
     "code": "5.x.x",
-    "confidence": "3.x.x",
+
     "eslint": "4.x.x",
     "eslint-config-hapi": "11.x.x",
     "eslint-plugin-hapi": "4.x.x",
