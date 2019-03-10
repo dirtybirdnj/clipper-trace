@@ -20,7 +20,12 @@
     "calipers-jpeg": "^2.0.0",
     "calipers-png": "^2.0.0",
     "calipers-svg": "^2.0.0",
+    "confidence": "3.x.x",
+    "dotenv": "5.x.x",
     "fildes": "^2.1.0",
+    "glue": "5.x.x",
+    "handlebars": "^4.1.0",
+    "hapi": "17.x.x",
     "hapi-firebase-auth": "^0.2.0",
     "hapi-s3": "^0.3.1",
     "haute-couture": "3.x.x",
@@ -40,15 +45,10 @@
     "smooth-polyline": "^1.0.6",
     "sqlite3": "^4.0.1",
     "svgson": "^2.1.1",
-    "vision": "^5.3.3",
-    "glue": "5.x.x",
-    "dotenv": "5.x.x",
-    "hapi": "17.x.x",
-    "confidence": "3.x.x"        
+    "vision": "^5.3.3"
   },
   "devDependencies": {
     "code": "5.x.x",
-
     "eslint": "4.x.x",
     "eslint-config-hapi": "11.x.x",
     "eslint-plugin-hapi": "4.x.x",
