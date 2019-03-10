@@ -42,9 +42,9 @@ module.exports = new Confidence.Store({
             {
                 plugin  : 'hapi-s3',
                 options : {
-                    publicKey : process.env.AWS_ACCESS_KEY_ID,
-                    secretKey : process.env.AWS_SECRET_ACCESS_KEY,
-                    bucket: process.env.AWS_BUCKET
+                    publicKey : process.env.BUCKETEER_AWS_ACCESS_KEY_ID,
+                    secretKey : process.env.BUCKETEER_AWS_SECRET_ACCESS_KEY,
+                    bucket: process.env.BUCKETEER_BUCKET_NAME
                 }
             },            
             {
