@@ -41,16 +41,16 @@
     "sqlite3": "^4.0.1",
     "svgson": "^2.1.1",
     "vision": "^5.3.3",
-    "glue": "5.x.x" 
+    "glue": "5.x.x",
+    "dotenv": "5.x.x",
+    "hapi": "17.x.x"    
   },
   "devDependencies": {
     "code": "5.x.x",
     "confidence": "3.x.x",
-    "dotenv": "5.x.x",
     "eslint": "4.x.x",
     "eslint-config-hapi": "11.x.x",
     "eslint-plugin-hapi": "4.x.x",
-    "hapi": "17.x.x",
     "hpal-debug": "1.x.x",
     "lab": "15.x.x",
     "toys": "2.x.x",
