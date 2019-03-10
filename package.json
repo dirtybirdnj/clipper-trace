@@ -46,7 +46,8 @@
     "smooth-polyline": "^1.0.6",
     "sqlite3": "^4.0.1",
     "svgson": "^2.1.1",
-    "vision": "^5.3.3"
+    "vision": "^5.3.3",
+    "airbrake-js": "^1.6.2"
   },
   "devDependencies": {
     "code": "5.x.x",
