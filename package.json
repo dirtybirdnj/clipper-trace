@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "build:css": "postcss lib/public/css/main.css -o lib/public/css/main.min.css --use cssnano --no-map",
     "build:js": "uglifyjs lib/public/js/main.js -o lib/public/js/main.min.js",
-    "build": "npm run build:css && npm run build:js"
+    "build": "npm run build:css && npm run build:js",
+    "dbup": "knex migrate:latest"
   },
   "dependencies": {
     "blipp": "^3.0.0",
