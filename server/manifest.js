@@ -31,7 +31,7 @@ module.exports = new Confidence.Store({
             {
                 plugin: 'blipp',
                 options: {}
-            },            
+            },
             {
                 plugin: {
                     $filter: 'NODE_ENV',
@@ -39,14 +39,6 @@ module.exports = new Confidence.Store({
                     production: Toys.noop
                 }
             },
-            {
-                plugin  : 'hapi-s3',
-                options : {
-                    publicKey : process.env.BUCKETEER_AWS_ACCESS_KEY_ID,
-                    secretKey : process.env.BUCKETEER_AWS_SECRET_ACCESS_KEY,
-                    bucket: process.env.BUCKETEER_BUCKET_NAME
-                }
-            },            
             {
                 plugin: 'schwifty',
                 options: {
@@ -69,17 +61,7 @@ module.exports = new Confidence.Store({
                         migrateOnStart: false
                     }
                 }
-            },
-            {
-                plugin: 'node-hapi-airbrake',
-                options: {
-                  key: AIRBRAKE_API_KEY,
-                  env: 'development',
-                  appId: AIRBRAKE_PROJECT_ID, 
-                  host: 'clipper-trace.herokuapp.com',
-                  notify: 'notify'
-                }
-            }            
+            }
         ]
     }
 });
